@@ -3670,7 +3670,7 @@ textarea.input {
 }
 .table-terms__row {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   padding: 10px 2px;
   min-height: 72px;

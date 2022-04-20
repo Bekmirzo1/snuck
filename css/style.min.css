@@ -625,6 +625,7 @@ textarea.input {
 .spoller__title {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   color: #000;
   cursor: pointer;
   transition: all 0.3s ease 0s;
@@ -636,7 +637,6 @@ textarea.input {
   }
 }
 .spoller__value {
-  flex: 1 1 auto;
   line-height: 140%;
   font-size: 18px;
   font-weight: 500;
@@ -652,6 +652,9 @@ textarea.input {
   .spoller__content {
     padding: 0px 15px;
   }
+}
+.spoller__list-item:not(:last-child) {
+  margin: 0px 0px 0.875em 0px;
 }
 
 .slider-arrow {
@@ -3594,8 +3597,26 @@ textarea.input {
 .faq__spoller:not(:last-child) {
   margin: 0px 0px 30px 0px;
 }
-.faq__spoller .spoller__content {
+.faq__spoller .spoller__value {
   max-width: 500px;
+}
+@media (min-width: 1023.98px) {
+  .faq__spoller .spoller__value {
+    margin: 0px 30px 0px 0px;
+  }
+}
+@media (max-width: 1023.98px) {
+  .faq__spoller .spoller__value {
+    max-width: 72.6744186047%;
+  }
+}
+@media (max-width: 767.98px) {
+  .faq__spoller .spoller__value {
+    max-width: 83.7837837838%;
+  }
+}
+.faq__spoller .spoller__content {
+  max-width: 595px;
 }
 @media (min-width: 1023.98px) {
   .faq__spoller .spoller__content {

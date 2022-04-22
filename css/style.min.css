@@ -8,8 +8,8 @@
 @font-face {
   font-family: "poppins";
   font-display: swap;
-  src: url("../fonts/poppins-700.woff2") format("woff2"), url("../fonts/poppins-700.woff") format("woff");
-  font-weight: 700;
+  src: url("../fonts/poppins-regular.woff2") format("woff2"), url("../fonts/poppins-regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
@@ -22,15 +22,43 @@
 @font-face {
   font-family: "poppins";
   font-display: swap;
-  src: url("../fonts/poppins-regular.woff2") format("woff2"), url("../fonts/poppins-regular.woff") format("woff");
-  font-weight: 400;
+  src: url("../fonts/poppins-600.woff2") format("woff2"), url("../fonts/poppins-600.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "poppins";
   font-display: swap;
-  src: url("../fonts/poppins-600.woff2") format("woff2"), url("../fonts/poppins-600.woff") format("woff");
+  src: url("../fonts/poppins-700.woff2") format("woff2"), url("../fonts/poppins-700.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "montserrat";
+  font-display: swap;
+  src: url("../fonts/montserrat-regular.woff2") format("woff2"), url("../fonts/montserrat-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "montserrat";
+  font-display: swap;
+  src: url("../fonts/montserrat-500.woff2") format("woff2"), url("../fonts/montserrat-500.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "montserrat";
+  font-display: swap;
+  src: url("../fonts/montserrat-600.woff2") format("woff2"), url("../fonts/montserrat-600.woff") format("woff");
   font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "montserrat";
+  font-display: swap;
+  src: url("../fonts/montserrat-700.woff2") format("woff2"), url("../fonts/montserrat-700.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
 }
 [class^=_icon-]:before,
@@ -150,6 +178,9 @@ h6 {
 body {
   color: #0f0916;
 }
+body._russia {
+  font-family: "montserrat";
+}
 body._lock {
   overflow: hidden;
 }
@@ -220,7 +251,7 @@ body._lock {
 .btn_yellow {
   background-color: #fbc22d;
   color: #4a2577;
-  border-color: #4a2577;
+  border: 2px solid #4a2577;
   box-shadow: 3px 3px 0px #422862;
 }
 @media (any-hover: hover) {
@@ -502,6 +533,9 @@ textarea.input {
   text-align: center;
 }
 
+.range {
+  position: relative;
+}
 .range__slider {
   margin: 0px 0px 30px 0px;
 }
@@ -517,6 +551,10 @@ textarea.input {
 }
 .range__inputs .input:not(:last-child) {
   margin: 0px 20px 0px 0px;
+}
+
+._russia {
+  font-family: "montserrat";
 }
 
 ._title {
@@ -916,8 +954,46 @@ textarea.input {
   box-sizing: border-box;
 }
 
+.noUi-base::before, .noUi-base::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 3.4059945504%;
+  height: 100%;
+  top: 50%;
+  border-radius: 25px;
+  z-index: 2;
+}
+@media (max-width: 1023.98px) {
+  .noUi-base::before, .noUi-base::after {
+    width: 2.9972752044%;
+  }
+}
+@media (max-width: 600px) {
+  .noUi-base::before, .noUi-base::after {
+    width: 4.0871934605%;
+  }
+}
+@media (max-width: 479.98px) {
+  .noUi-base::before, .noUi-base::after {
+    width: 5.5350553506%;
+  }
+}
+.noUi-base::before {
+  right: 100%;
+  background-color: #8b6fe2;
+  transform: translate(50%, -50%);
+}
+.noUi-base::after {
+  left: 100%;
+  transform: translate(-50%, -50%);
+  background-color: #f1e6ff;
+}
+
 .noUi-target {
   position: relative;
+  background: #f1e6ff;
+  border-radius: 25px;
 }
 
 .noUi-base,
@@ -1001,7 +1077,7 @@ textarea.input {
     height: 12px;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 479.98px) {
   .noUi-horizontal {
     height: 6px;
   }
@@ -1020,7 +1096,7 @@ textarea.input {
     right: -10px;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 479.98px) {
   .noUi-horizontal .noUi-handle {
     width: 14px;
     height: 14px;
@@ -1048,11 +1124,6 @@ textarea.input {
 /* Styling;
   * Giving the connect element a border radius causes issues with using transform: scale
   */
-.noUi-target {
-  background: #f1e6ff;
-  border-radius: 25px;
-}
-
 .noUi-connects {
   border-radius: 25px;
 }
@@ -1124,7 +1195,7 @@ textarea.input {
 }
 @media (max-width: 767.98px) {
   .noUi-value {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media (max-width: 479.98px) {
@@ -1327,7 +1398,6 @@ textarea.input {
 .popup__body {
   transform: scale(0);
   transition: all 0.3s ease 0s;
-  background: #676767;
   box-shadow: 0px 20px 20px rgba(33, 33, 35, 0.1);
   position: relative;
   width: 100%;
@@ -1584,6 +1654,9 @@ textarea.input {
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
   margin: 15px 0px 0px 0px;
+}
+.menu__sub-item ._russia {
+  font-weight: 500;
 }
 .menu__sub-item:not(:last-child) {
   margin: 0px 0px 15px 0px;
@@ -2454,7 +2527,7 @@ textarea.input {
   top: 50%;
   transform: translate(0, -50%);
   left: 0;
-  border: 2px dashed #4a2577;
+  border-top: 2px dashed #4a2577;
   z-index: -1;
 }
 .start__pagination .swiper-pagination-bullet {
@@ -2799,13 +2872,25 @@ textarea.input {
 .calculator__range {
   padding: 0px 15px;
 }
+.calculator__range._start .noUi-base::before {
+  opacity: 0;
+}
+.calculator__range._end .noUi-base::after {
+  opacity: 0;
+}
+.calculator__range._trs .noUi-base::before {
+  transition: opacity 0s ease 0.3s;
+}
+.calculator__range._trs2 .noUi-base::after {
+  transition: opacity 0s ease 0.3s;
+}
 @media (max-width: 1023.98px) {
-  .calculator__range {
+  .calculator {
     padding: 0px 10px;
   }
 }
 @media (max-width: 767.98px) {
-  .calculator__range {
+  .calculator {
     padding: 0px 5px;
   }
 }

@@ -260,9 +260,18 @@ body._lock {
     box-shadow: none;
   }
 }
+.btn._windows ._android {
+  display: none;
+}
+.btn._android ._windows {
+  display: none;
+}
 .btn__icon {
   width: 20px;
   margin: 0px 10px 0px 0px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .btn__icon img {
   max-width: 100%;

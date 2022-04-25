@@ -234,6 +234,12 @@ body._lock {
   font-size: 18px;
   font-weight: 500;
   transition: all 0.3s ease 0s;
+  line-height: 140%;
+}
+@media (min-width: 767.98px) {
+  .hindi .btn {
+    font-size: 16px;
+  }
 }
 .btn_white {
   border: 2px solid #ffffff;
@@ -272,12 +278,10 @@ body._lock {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  line-height: 1;
 }
 .btn__icon img {
   max-width: 100%;
-}
-.btn__text {
-  line-height: 140%;
 }
 .btn._fw {
   width: 100%;
@@ -564,6 +568,10 @@ textarea.input {
 
 ._russia {
   font-family: "montserrat";
+}
+
+._en {
+  font-family: "poppins";
 }
 
 ._title {
@@ -1990,7 +1998,8 @@ textarea.input {
 }
 @media (min-width: 1023.98px) {
   .fullscreen__content {
-    flex: 0 1 615px;
+    flex: 1 1 auto;
+    margin: 0px 20px 0px 0px;
   }
 }
 @media (max-width: 1023.98px) {
@@ -2043,7 +2052,7 @@ textarea.input {
   white-space: nowrap;
 }
 .fullscreen__buttons {
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
 }
 @media (max-width: 767.98px) {
@@ -2066,6 +2075,7 @@ textarea.input {
 }
 .fullscreen__image {
   filter: drop-shadow(0px 24px 62px rgba(0, 0, 0, 0.14));
+  flex: 0 1 513px;
 }
 @media (max-width: 1023.98px) {
   .fullscreen__image {

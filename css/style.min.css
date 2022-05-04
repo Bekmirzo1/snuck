@@ -364,7 +364,7 @@ textarea.input {
 }
 
 ._anim-default._anim-items, ._anim-items._title2 {
-  transition: all 1.6s ease 0s;
+  transition: all 1.8s ease 0s;
   opacity: 0;
   visibility: hidden;
   transform: translate(0, 30px);
@@ -1277,6 +1277,22 @@ textarea.input {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
+  position: relative;
+}
+.menu__link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0%;
+  height: 3px;
+  top: 100%;
+  left: 0;
+  background: #fbc22d;
+  transition: width 0.3s ease 0s;
+}
+.menu__link._active::after {
+  width: 100%;
+  transition: none;
 }
 @media (max-width: 1023.98px) {
   .menu__link {
@@ -3240,15 +3256,11 @@ textarea.input {
 }
 .faq__left {
   flex: 0 0 27.6898734177%;
+  padding: 0px 20px 0px 0px;
 }
 @media (max-width: 1023.98px) {
   .faq__left {
     display: none;
-  }
-}
-@media (min-width: 1023.98px) {
-  .faq__select {
-    max-width: 224px;
   }
 }
 @media (max-width: 1023.98px) {
@@ -3329,6 +3341,13 @@ textarea.input {
   cursor: pointer;
   user-select: none;
   transition: all 0.3s ease 0s;
+}
+@media (min-width: 1023.98px) {
+  .faq__select-option {
+    width: auto;
+    min-width: 224px;
+    display: inline-block;
+  }
 }
 @media (max-width: 1023.98px) {
   .faq__select-option {

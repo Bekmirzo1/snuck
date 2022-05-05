@@ -2807,6 +2807,8 @@ textarea.input {
   .full-about__image {
     max-width: 527px;
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
 .full-about__image img {

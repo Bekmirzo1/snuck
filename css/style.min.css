@@ -257,10 +257,7 @@ body._lock {
     box-shadow: none;
   }
 }
-.btn._windows ._android {
-  display: none;
-}
-.btn._android ._windows {
+.btn._none {
   display: none;
 }
 .btn__icon {

@@ -330,6 +330,10 @@ textarea.input {
   white-space: nowrap;
 }
 
+._block {
+  display: block;
+}
+
 ._en {
   font-family: "poppins";
 }
@@ -1040,6 +1044,16 @@ textarea.input {
   transition: visibility 0.8s ease 0s;
   visibility: hidden;
 }
+@media (max-width: 767.98px) {
+  .popup {
+    padding: 30px 20px;
+  }
+}
+@media (max-width: 479.98px) {
+  .popup {
+    padding: 30px 10px;
+  }
+}
 .popup::before {
   content: "";
   background-color: #4d2879;
@@ -1205,6 +1219,11 @@ textarea.input {
     padding: 44px 20px 35px 20px;
   }
 }
+@media (max-width: 479.98px) {
+  .download-popup__body {
+    padding: 44px 9px 35px 9px;
+  }
+}
 .download-popup__content {
   color: #4a2577;
   margin: 0px 10px 0px 0px;
@@ -1250,6 +1269,11 @@ textarea.input {
   line-height: 150%;
   font-weight: 500;
   margin: 0px 0px 28px 0px;
+}
+@media (max-width: 1023.98px) {
+  ._russia .download-popup__text ._no-wrap {
+    display: block;
+  }
 }
 .download-popup__button {
   color: #311851;
@@ -1310,7 +1334,7 @@ textarea.input {
   }
 }
 .android-popup__content {
-  max-width: 351px;
+  max-width: 554px;
 }
 .android-popup__title {
   margin: 0px 0px 26px 0px;
@@ -1379,7 +1403,7 @@ textarea.input {
   }
 }
 .header._scroll .header__wrapper {
-  background-color: #4B306B;
+  background-color: #4b306b;
 }
 .header__wrapper {
   position: fixed;
@@ -1437,7 +1461,7 @@ textarea.input {
   .header__button {
     margin: 0px 20px 0px 0px;
   }
-  .es .header__button {
+  .es .header__button, .pt .header__button, ._russia .header__button {
     margin: 0px 10px 0px 0px;
   }
 }
@@ -1593,6 +1617,9 @@ textarea.input {
 }
 .menu__sub-item ._russia {
   font-weight: 500;
+}
+._russia .menu__sub-item ._russia {
+  font-weight: 400;
 }
 .menu__sub-item:not(:last-child) {
   margin: 0px 0px 15px 0px;
@@ -2007,7 +2034,7 @@ textarea.input {
   }
 }
 @media (max-width: 767.98px) {
-  .fullscreen__button:nth-child(2) {
+  .fullscreen__button.btn_white {
     display: none;
   }
 }
@@ -3766,6 +3793,7 @@ textarea.input {
 .columns-blogs__title {
   font-size: 26px;
   line-height: 150%;
+  font-weight: 600;
   margin: 0px 0px 20px 0px;
   color: inherit;
   display: block;
@@ -3867,6 +3895,9 @@ textarea.input {
   .full-blog {
     padding: 66px 0px 55px 0px;
   }
+}
+.full-blog._pb-none {
+  padding-bottom: 0;
 }
 .full-blog__title {
   text-align: center;
@@ -4149,4 +4180,7 @@ textarea.input {
   .e-success__button {
     margin: 0px 0px 56px 0px;
   }
+}
+.e-success__back {
+  font-weight: 600;
 }

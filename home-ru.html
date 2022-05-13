@@ -34,7 +34,7 @@
                                 <a href="faq-ru.html" class="menu__link">FAQ</a>
                             </li>
                             <li class="menu__item">
-                                <a href="blog-ru.html" class="menu__link">Блог</a>
+                                <a href="blogs-ru.html" class="menu__link">Блог</a>
                             </li>
                             <li class="menu__item _item" data-spollers="991.98, max">
                                 <span class="menu__link _item__link" data-spoller>
@@ -90,14 +90,22 @@
                     Заставь лишний трафик работать
                 </div>
                 <div class="fullscreen__buttons">
-                    <a href="" class="fullscreen__button btn btn_yellow _android">
+                    <a href="https://snack-application.s3.eu-central-1.amazonaws.com/applications/windows/latest.zip"
+                        data-popup="windows" class="fullscreen__button btn btn_yellow _windows _system _none">
                         <span class="btn__icon">
-                            <img class="_windows" src="img/icons/windows.svg" alt="">
-                            <img class="_android" src="img/icons/android.svg" alt="">
+                            <img src="img/icons/windows.svg" alt="">
                         </span>
                         <span class="btn__text">
-                            <span class="_windows">Скачать для Windows</span>
-                            <span class="_android">Скачать для Android</span>
+                            <span>Скачать для Windows</span>
+                        </span>
+                    </a>
+                    <a href="https://snack-application.s3.eu-central-1.amazonaws.com/applications/android/latest.apk"
+                        data-popup="android" class="fullscreen__button btn btn_yellow _android _system">
+                        <span class="btn__icon">
+                            <img src="img/icons/android.svg" alt="">
+                        </span>
+                        <span class="btn__text">
+                            <span>Скачать для Android</span>
                         </span>
                     </a>
                     <a href="" class="fullscreen__button btn btn_white">
@@ -428,7 +436,7 @@
                     <li class="footer__item"><a href="#products" data-page="home-ru.html" class="_goto">Продукты</a></li>
                     <li class="footer__item"><a href="about-ru.html">О нас</a></li>
                     <li class="footer__item"><a href="faq-ru.html">FAQ</a></li>
-                    <li class="footer__item"><a href="blog-ru">Блог</a></li>
+                    <li class="footer__item"><a href="blogs-ru.html">Блог</a></li>
                     <li class="footer__item"><a href="">Личный кабинет</a></li>
                 </ul>
                 <ul class="footer__list">
@@ -467,15 +475,15 @@
 			<div class="popup__close"></div>
 			<div class="download-popup__content">
 				<h2 class="download-popup__title _title2">
-					<span class="_block">New to Snack?</span>
-					There's a <span class="_color">$5</span> gift
-					<span class="_block-adaptive">for <span>you!</span></span>
+					<span class="_block">Впервые в Snack?</span>
+					Для тебя подарок!
 				</h2>
 				<div class="download-popup__text">
-					Join Snack now and receive <span class="_no-wrap">$5 instantly</span>
+					Присоединяйся к Snack и получи
+					<span class="_no-wrap">приветственный бонус!</span>
 				</div>
 				<a href="" class="download-popup__button btn btn_yellow">
-					Join Snack and Get $5
+					Присоединиться
 				</a>
 			</div>
 			<div class="download-popup__image">
@@ -490,11 +498,11 @@
 			<div class="windows-popup__close popup__close"></div>
 			<div class="windows-popup__content">
 				<h2 class="windows-popup__title _title3">
-					Windows-based devices may warn you about possible risks related to Snack installation
+					Устройства на базе Windows могут предупреждать тебя о возможных рисках, связанных с установкой Snack
 				</h2>
 				<div class="windows-popup__text">
-					No concerns! It's absolutely safe. To continue using Snack, just authorize the app's installation on
-					your device in a warning pop-up and accept our privacy policy
+					Не переживай! Все абсолютно безопасно. Чтобы продолжить использовать Snack, просто разреши установку
+					приложения во всплывающем окне с предупреждением и прими политику конфиденциальности сервиса.
 				</div>
 			</div>
 		</div>
@@ -506,23 +514,25 @@
 			<div class="windows-popup__close popup__close"></div>
 			<div class="android-popup__content">
 				<h2 class="windows-popup__title android-popup__title _title3">
-					Android devices may block Snack installation, as it's not in Play Market yet
+					Устройства на базе Android могут блокировать установку Snack, так как приложение еще не появилось в
+					Play Market
 				</h2>
 				<h4 class="android-popup__subtitle">
-					To continue using Snack, <span class="_no-wrap">do the following:</span>
+					Чтобы продолжить
+					<span class="_no-wrap">использовать сервис:</span>
 				</h4>
 				<ol class="android-popup__list">
 					<li class="android-popup__list-item">
-						Enable Snack installation in device's settings
+						Разреши установку Snack в настройках своего устройства
 					</li>
 					<li class="android-popup__list-item">
-						Authorize app's installation in a pop-up you'll see after this
+						Подтверди установку приложения
 					</li>
 					<li class="android-popup__list-item">
-						Choose «Install anyway» in blocking notification pop-up
+						Выбери «Установить» во всплывающем окне с предупреждением
 					</li>
 					<li class="android-popup__list-item">
-						Accept Privacy Policy
+						Прими политику конфиденциальности Snack
 					</li>
 				</ol>
 			</div>
